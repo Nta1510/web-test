@@ -1,1 +1,192 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top bar */
+.top-bar {
+    background: #2c2543;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Tạo khoảng cách giữa các icon */
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.search-box input {
+    border: none;
+    padding: 5px;
+    outline: none;
+    width: 150px;
+}
+
+.search-box button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Navigation */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar .logo {
+    width: 150px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 5px 10px;
+}
+
+.language img {
+    width: 30px;
+    margin-left: 5px;
+}
+
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+
+/* Định dạng menu chính */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: white;
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ /* Ẩn submenu mặc định */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    display: none; /* Ẩn đi ban đầu */
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiển thị submenu khi di chuột vào */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Định dạng submenu */
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.submenu li:hover {
+    background: #f4f4f4;
+}
+
+/* Footer */
+footer {
+    background: #2c2543;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
 
