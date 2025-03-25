@@ -1,1 +1,83 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinhMinh TMC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="contact-info">☎ 0989203466 | 📧 sales1@binhminhtmc.com</span>
+            <div class="social-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm..." id="searchInput">
+                    <button onclick="performSearch()">🔍</button>
+                </div>
+                <!-- <a href="#"><img src="assets/icons/search.png" alt="Search"></a> -->
+                <a href="#"><img src="assets/icons/map.png" alt="Globe"></a>
+                <a href="#"><img src="assets/icons/phone.png" alt="Phone"></a>
+                <a href="#"><img src="assets/icons/chat.png" alt="Chat"></a>
+                <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <img src="assets/images/logo.png" alt="BinhMinh Logo" class="logo">
+    
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="dropdown">
+                        <a href="sanpham.html">SẢN PHẨM ▼</a>
+                        <ul class="submenu">
+                            <li><a href="doga.html">Đồ Gá</a></li>
+                            <li><a href="khuonmau.html">Khuôn Mẫu</a></li>
+                            <li><a href="linhkien.html">Linh Kiện Hàng Loạt</a></li>
+                            <li><a href="prototype.html">Prototype</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav> 
+            
+            <div class="language">
+                <img src="assets/images/vn.png" alt="Vietnam">
+                <img src="assets/images/jp.png" alt="Japan">
+                <img src="assets/images/uk.png" alt="UK">
+                <img src="assets/images/kr.png" alt="Korea">
+            </div>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-right">
+            <div class="slider">
+                <div class="slides">
+                    <img src="assets/images/factory.jpg" alt="Factory Image 1">
+                    <img src="assets/images/factory2.jpg" alt="Factory Image 2">
+                    <img src="assets/images/factory3.jpg" alt="Factory Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    
+   <!--  <section class="banner">
+        
+        <div class="banner-right">
+            <img src="assets/images/factory.jpg" alt="Factory Image" class="factory-image">
+        </div>
+    </section> -->
+    
+    <footer>
+        <p>&copy; 2025 BinhMinh TMC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
